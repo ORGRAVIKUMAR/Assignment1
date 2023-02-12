@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>Assignment 1</title>
+	<style type="text/css">
+.image{
+	text-align: center;
+}
+.textimg{
+	position: absolute;
+	transform: translateX(-100px);
+	color: white;
+	top: 175px;
+	left: 39%;
+	font-size: 20px;
+	font-family: courier;
+}
+.topnav{
+  background-color: #333;
+}
+
+.topnav a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 26px;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 10px;
+}
+
+.topnav input{
+  border-radius: 5px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a:active{
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 8px;
+}
+.pfp{
+	width: 200px;
+	float: left;
+	margin: 5px;
+}
+table,th,td{
+	border: 1px solid black;
+}
+table tr:nth-child(odd)
+{
+	background-color: #bfbfbf;
+}
+label{
+	margin-bottom: 25px;
+	font-family: Consolas;
+}
+input{
+	margin-bottom: 15px;
+}
+.send{
+	background-color: lightgreen;
+	border-radius: 8px;
+	padding: 2px;
+	width: 50px;
+	position: relative;
+	left: 120px;
+}
+.copyrights{
+	text-align: right;
+}
+.split-screen {
+  display: flex;
+}
+.split-line {
+  width: 3px;
+  height: 150%;
+  background-color: blue;
+  position: absolute;
+  left: 68%;
+}
+
+.left-screen {
+  width: 75%;
+}
+
+.right-screen {
+  width: 25%;
+  transform: translate(10px,-10px);
+}
+
+
+	</style>
+</head>
+<body style="background-color: #d1d0ce;width: 90%;">
+	<div class="image">
+			<img src="https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg" style="height:200px; width: 1000px;"><br><br>
+			<div class="textimg">I'm Ravikumar a web developer</div>
+	 </div>
+<div class="split-screen">
+  <div class="left-screen">
+	<div class="page">
+	 
+	<div class="topnav">
+    	   <a class="active" href="#home">Home</a>
+           <a href="#aboutme">About Me</a>
+   	       <a href="#skills">Skills</a>
+           <a href="#contact">Contact</a>
+       	</div><br>
+       	<p>
+       		<h2 class="title" id="active">Welcome</h2>
+       		This is My Page Contain My details If you have any queries you can send a message in contact section.If you want to see my project github link provided.You can see what i learning and what i completed.This all about this page.
+       	</p>
+       	<p style="text-transform:capitalize;">
+       		<h2 class="title" id="aboutme">About Me</h2>
+       		<center><img src="data:image/jpeg;base64,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" class="pfp"></center>
+       		I am Ravikumar O R G. I am currently pursing my Engineering degree in Velammmal college of Engineering and Technology IV th year.I  am living in Madurai,Tamil Nadu.I completed C,Java,HTML,CSS,javascript courses and currently learning android development and react JS and MERN full stack developer.I do some project related to this, you can check it in my github.<div>Link:<a href="https://github.com/ORGRAVIKUMAR" target="blank">githhub</a></div>
+       	</p><br><br><br><br><br><br><br>
+       	<p >
+       		<h2 class="title" id="skills">Skills</h2>
+       		<table class="skills">
+       			<tr>
+       				<th>Year accquired</th>
+       				<th>Description</th>
+       				<th>Level</th>
+       			</tr>
+       			<tr>
+       				<td>2003</td>
+       				<td>C</td>
+       				<td>7</td>
+       			</tr>
+       			<tr>
+       				<td>2004</td>
+       				<td>Java</td>
+       				<td>9</td>
+       			</tr>
+       			<tr>
+       				<td>2005</td>
+       				<td>HTML</td>
+       				<td>6</td>
+       			</tr>
+       			<tr>
+       				<td>2006</td>
+       				<td>CSS</td>
+       				<td>9</td>
+       			</tr>
+       			<tr>
+       				<td>2007</td>
+       				<td>javascript</td>
+       				<td>8</td>
+       			</tr>
+       		</table>
+       	</p>
+       	<p>
+       		<h2 class="title" id="contact">
+       			Send me a message
+       		</h2>
+       		<form>
+       			<label for="fname">Name</label><br>
+       			<input type="text" name="fname" value="Enter your name"><br>
+       			<label for="mailid">Email id</label><br>
+       			<input type="text" name="mailid" value="Enter your mail id"><br>
+       			<label for="mssg">Message</label><br>
+       			<textarea type="textarea" name="msg"></textarea><br>
+       			<input type="submit" class="send" value="send">
+       		</form>
+       	</p>
+       	<footer >
+        <p class="copyrights" style="text-align: center;">© Copyright 2023-2024 All rights reserved by O R G RAVIKUMAR</p>
+    </footer>
+	</div>
+</div>
+
+ <div class="right-screen">
+<p>Connect With Me:</p>
+<ul>
+<li><div>Address: Mahal 6th Street,Madurai</div></li>
+<li><div>Mail id: 21cse119ravikumar@gmail.com</div></li>
+<li><div>Phone Number: 9361560548</div></li>
+</ul>
+<div id="image" >
+	<span style="">
+		<a href="https://www.facebook.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgHHqL0zCl_JTbuNMvQjD3FrhbILA_1P2QXh-Te4&s" style="height:100px; width: 100px;"></a>
+		<a href="https://www.instagram.com/?next=%2F" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShw-O1uPyH3B1pXb6THx500R6MEUPkZ84LOMIfI6skUg&s" style="height:100px; width: 100px;"></a>
+		<a href="https://www.linkedin.com/uas/login-submit" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png " style="height:100px; width: 100px;"></a>
+	</span>	
+</div>
+</div>
+<div class="split-line"></div>
+</div>
+
+</body>
+</html>
